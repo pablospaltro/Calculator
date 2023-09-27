@@ -7,6 +7,8 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.scene.paint.Color;
 import javafx.stage.StageStyle;
+import main.MainWindowController;
+
 
 
 import java.awt.*;
@@ -17,6 +19,7 @@ public class MainWindow extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MainWindowInterface.fxml"));
         Scene scene = new Scene(loader.load());
         scene.setFill(Color.TRANSPARENT);
+        //scene.setOnKeyPressed(this::onKeyPressed);
         stage.setScene(scene);
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setResizable(false);
